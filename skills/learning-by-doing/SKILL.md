@@ -1,10 +1,10 @@
 ---
-name: teaching-by-doing
+name: learning-by-doing
 description: Use when the user wants to learn a technical tool or concept by practicing it, not by being handed answers. Triggers include "teach me", "explain how X works", "I want to understand", "help me learn", "walk me through", or any hands-on learning of CLI tools, IaC, DevOps, programming, or technical concepts.
 license: MIT
 ---
 
-# Teaching By Doing
+# Learning By Doing
 
 ## Core principle
 
