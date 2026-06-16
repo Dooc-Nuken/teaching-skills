@@ -1,13 +1,14 @@
 # Teaching skills for Claude Code
 
-Two complementary skills for **teaching** and **memorizing**, built for Claude Code and portable to other AI coding agents (Cursor, Codex, and more).
+Three skills for **teaching**, **examining**, and **memorizing**, built for Claude Code and portable to other AI coding agents (Cursor, Codex, and more).
 
 ## The skills
 
 - **teaching-by-doing**: a hands-on teaching method. Concrete example first, quick theory, practice on something broken (where the connection forms), then redo alone. Handles concept vs skill, progressive hints, adaptive pacing, and spaced review. Grounded in 2025 learning research: avoiding metacognitive laziness, retrieval practice, spacing, Bloom's taxonomy, and the zone of proximal development. No dependencies, just a `SKILL.md`.
 - **anki-flashcards**: generate Anki flashcards (`.apkg`) for spaced repetition. Picks up where teaching-by-doing leaves off, to lock learning into long-term memory.
+- **oral-examiner**: help an examiner question a student live to measure real understanding, not recitation. The mirror of teaching-by-doing: it measures understanding instead of building it, with a Bloom climb, transfer questions, bias control, and rubric-based grading.
 
-Both rest on the same evidence: active recall, spaced repetition, desirable difficulty.
+They all rest on the same evidence: active recall, spaced repetition, desirable difficulty, and Bloom's taxonomy.
 
 ## Install
 
@@ -26,7 +27,7 @@ Copy each folder into `~/.claude/skills/`, then restart your agent.
 ```bash
 git clone https://github.com/Dooc-Nuken/teaching-skills.git
 cd teaching-skills
-for s in teaching-by-doing anki-flashcards; do
+for s in teaching-by-doing anki-flashcards oral-examiner; do
   mkdir -p ~/.claude/skills/"$s"
   cp -R ./skills/"$s"/. ~/.claude/skills/"$s"/
 done
@@ -35,7 +36,7 @@ done
 Windows (PowerShell):
 
 ```powershell
-foreach ($s in "teaching-by-doing","anki-flashcards") {
+foreach ($s in "teaching-by-doing","anki-flashcards","oral-examiner") {
   $dst = "$env:USERPROFILE\.claude\skills\$s"
   New-Item -ItemType Directory -Path $dst -Force | Out-Null
   Copy-Item -Path ".\skills\$s\*" -Destination $dst -Recurse -Force
