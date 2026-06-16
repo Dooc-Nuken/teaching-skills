@@ -4,8 +4,8 @@ Two complementary skills for **teaching** and **memorizing**, built for Claude C
 
 ## The skills
 
-- **teaching-by-doing** — a hands-on teaching method: concrete example first, quick theory, practice on something broken (where the connection forms), then redo alone. Handles concept vs skill, progressive hints, adaptive pacing, and spaced review. Grounded in 2025 learning research: avoiding metacognitive laziness, retrieval practice, spacing, Bloom's taxonomy, and the zone of proximal development. No dependencies, just a `SKILL.md`.
-- **anki-flashcards** — generate Anki flashcards (`.apkg`) for spaced repetition. Picks up where teaching-by-doing leaves off, to lock learning into long-term memory.
+- **teaching-by-doing**: a hands-on teaching method. Concrete example first, quick theory, practice on something broken (where the connection forms), then redo alone. Handles concept vs skill, progressive hints, adaptive pacing, and spaced review. Grounded in 2025 learning research: avoiding metacognitive laziness, retrieval practice, spacing, Bloom's taxonomy, and the zone of proximal development. No dependencies, just a `SKILL.md`.
+- **anki-flashcards**: generate Anki flashcards (`.apkg`) for spaced repetition. Picks up where teaching-by-doing leaves off, to lock learning into long-term memory.
 
 Both rest on the same evidence: active recall, spaced repetition, desirable difficulty.
 
